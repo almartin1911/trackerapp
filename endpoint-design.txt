@@ -1,0 +1,31 @@
+DESIGN
+
+A)
+GET employee/{employeeID}/report/
+?startDate="2023-11-18"
+?endDate="2023-11-18"
+{
+	"id"
+}
+
+B) IMPLEMENTING
+GET /report
+?startDate="2023-11-18"
+?endDate="2023-11-18"
+?employeeID="33"
+
+{
+	"activities" : []
+}
+
+
+activity
+{
+	"id"
+	"startDate"
+	"endDate"
+	"description"
+	"duration"
+}
+
+func new --name report--template "HTTP trigger" --authlevel "anonymous"
